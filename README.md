@@ -1,5 +1,7 @@
 # web-auth
 
+**English** · [中文](README.zh-CN.md)
+
 [![CI](https://github.com/turinglambdaai/web-auth/actions/workflows/ci.yml/badge.svg)](https://github.com/turinglambdaai/web-auth/actions/workflows/ci.yml)
 
 Authentication guards for Racket's web-server: API key, bearer token,

@@ -1,5 +1,7 @@
 # web-auth
 
+[English](README.md) · **中文**
+
 [![CI](https://github.com/turinglambdaai/web-auth/actions/workflows/ci.yml/badge.svg)](https://github.com/turinglambdaai/web-auth/actions/workflows/ci.yml)
 
 Racket web-server 的认证守卫：API key、Bearer token、HTTP Basic，为小型 API 而做。守卫是「请求 → #f（放行）或响应（拒绝）」的过程——与普通 dispatcher 自由组合，不用起服务器就能测。
