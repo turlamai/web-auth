@@ -7,5 +7,5 @@
 (define scribblings '(("scribblings/web-auth.scrbl" ())))
 (define pkg-desc "Authentication guards for Racket web-server dispatchers")
 (define license 'MIT)
-(define pkg-authors '(turinglambdaai))
+(define pkg-authors '(turlamai))
 (define test-omit-paths '("scribblings"))
