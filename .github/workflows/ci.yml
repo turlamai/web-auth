@@ -10,7 +10,9 @@ permissions:
 
 # Keep main CI intact; cancel only superseded checks for the same PR.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  # New PR commits supersede old PR runs; main builds keep independent
+  # evidence even when several commits are pushed before runners start.
+  group: ci-${{ github.workflow }}-${{ github.event_name }}-${{ github.event.pull_request.number || github.run_id }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
